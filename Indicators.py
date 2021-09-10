@@ -17,7 +17,7 @@ def stochastic(df,a,b,c):
     return df
 
 def SMA(df,a,b):
-    "function to calculate stochastic"
+    "function to calculate Moving Average"
     df['sma_fast']=df['c'].rolling(a).mean() 
     df['sma_slow']=df['c'].rolling(b).mean() 
     return df
